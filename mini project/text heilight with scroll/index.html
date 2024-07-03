@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scrolling with heilight text</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-size: 2.5rem;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .page1 p,
+    .page2 p {
+        width: 67%;
+    }
+
+    .page1 {
+        background-color: rgb(27, 71, 107);
+        color: rgb(255, 255, 255);
+    }
+
+    .page2 {
+        background-color: rgb(35, 36, 37);
+        color: rgb(255, 255, 255);
+    }
+
+    .page3 {
+        background-color: steelblue;
+        position: relative;
+        overflow: hidden;;
+    }
+
+    .hello {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30vw;
+        width: 100%;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        /* position: relative; */
+    }
+    .img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+    }
+    .img img{
+        display: flex;
+        margin: auto;
+        width: 40%;
+        aspect-ratio: 1/.6;
+        border-radius: 50px;
+    }
+
+</style>
+
+<body>
+    <section class="page page1">
+        <p class="item">Lorem ipsum dolque, porro fugiat deleniim! </p>
+        <p class="item">Lorem ipsum dolleniti animi volim! </p>
+        <p class="item">Lorem voluptate? Voluptas at cuntium enim! </p>
+        <p class="item">Lorem ipsum dolor sit amet consectium enim! </p>
+    </section>
+
+    <section class="page page2">
+        <p class="item">Lorem ipsum dolque, porro fugiat deleniim! </p>
+        <p class="item">Lorem ipsum dolleniti animi volim! </p>
+        <p class="item">Lorem voluptate? Voluptas at cuntium enim! </p>
+        <p class="item">Lorem ipsum dolor sit amet consectium enim! </p>
+    </section>
+
+    <section class="page page3">
+        <div class="hello">
+            <p>H</p>
+            <p>E</p>
+            <p>L</p>
+            <p>L</p>
+            <p>O</p>
+            <div class="img">
+                <img src="./1288487.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="page page4">
+
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- gsap scrollTriger cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="heilight text.js"></script>
+
+</body>
+
+</html>
