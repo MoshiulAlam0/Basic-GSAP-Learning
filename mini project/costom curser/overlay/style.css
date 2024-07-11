@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    overflow-x: hidden;
+    position: relative;
+}
+.pointer{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .6rem;
+    text-align: center;
+}
+.page{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page img{
+    width: 60vw;
+    aspect-ratio: 1/.4;
+}
+
+.img-con{
+    position: relative;
+}
+.overlay,.text{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.text{
+    background-color: rgba(0, 0, 255, 0.411);
+    font-size: 3rem;
+    z-index: 7;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay{
+    background-color: transparent; /* change the bg color for chack overly */
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

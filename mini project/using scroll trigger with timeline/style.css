@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    overflow-x: hidden;
+    width: 100vw;
+}
+main {
+    width: 100vw;
+    overflow-x: hidden;
+}
+ /*  ================== ======================  page1 ================= ==============  */
+section {
+    width: 100%;
+    /* height: 100%; */
+}
+
+
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: yellow; */
+    padding: 1vw 0;
+    text-transform: capitalize;
+}
+
+nav h2 {
+    display: flex;
+    gap: .5vw;
+    font-size: 2rem;
+}
+
+nav h2 i {
+    rotate: 10deg;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5vw;
+}
+
+.nav-item a {
+    display: inline-block;
+    list-style: none;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item button {
+    padding: 10px 2vw;
+    font-size: 1rem;
+    border: 1.3px solid black;
+    background-color: transparent;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* page center  */
+.p1-center-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin:auto;
+    
+}
+
+.p1-center-part1 {
+    width: 40%;
+}
+
+.p1-center-part1 h1 {
+    font-size: 3.7rem;
+    text-transform: capitalize;
+}
+
+.p1-center-part1 p {
+    font-size: 1.1rem;
+    padding: 20px 0;
+}
+
+.common-button {
+    color: white;
+    background-color: black;
+    padding: 10px 1.3vw;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.p1-center-part2 img {
+    width: 90%;
+    height: 100%;
+}
+
+.p1-center-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.p1-bottom-con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: hidden;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    gap: 5vw;
+}
+.p1-bottom-con::after{
+    content: "";
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right , #fff, transparent); 
+}
+.p1-bottom-con::before{
+    content: "";
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to left , #ffffff, transparent); 
+    z-index: 1;
+}
+
+.moving-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5vw;
+    animation: anime 10s linear infinite reverse;
+}
+.moving-logo img{
+    width: 20vmin;
+}
+@keyframes anime {
+    to{
+
+        transform: translateX(0%);
+    }
+    from{
+        transform: translateX(-100%);
+    }
+}
+
+
+
+/* code for the page 2  */
+.page2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    margin: 6vw auto 6vw auto;
+    gap: 2vw;
+    /* background-color: red; */
+    
+}
+.p2-part1 {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4vw;
+    
+}
+.p2-part1 h3{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    background-color: #baff66;
+    display: inline;
+    padding: 1px 4px;
+}
+.p2-part1 p{
+    width: 70%;
+    font-size: 1.1rem;
+    color: #bababa;
+}
+
+.p2-part2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+.p2-part2-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-shrink: 0; */
+    width: 90vmin;
+    aspect-ratio: 2/.5;
+    padding: 2vw;
+    border: 2px solid black;
+    box-shadow: 0 7px 0px black;
+    border-radius: 10px;
+}
+.p2-part2-box img{
+    width: 40vmin;
+    aspect-ratio: 1/.8;
+}
+.p2-part2-box h1{
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    display: inline;
+}
+.p2-bottom{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    font-size: 1.2rem;
+    color: #bababa;
+}
+.p2-bottom i{
+    font-size: 2rem;
+    padding: 2px;
+    border-radius: 50%;
+    color: white;  
+    background-color: black; 
+}
+
+.bg-black{
+    background-color: black;
+    border: #baff66;
+    box-shadow: 0 7px 0 #baff66;
+}
+.bg-black  h1{
+    background-color: #baff66;
+}
+.bg-black i{
+    background-color: white;
+    color: black;
+}
+
+
+/* =============================== page 3 section -------------------------- */
+.page3{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 5vw;
+}
+.page3-con{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #bdbdbd;
+    border-radius: 20px;
+    padding: 6px 5vw;
+}
+.page3-part1{
+    width: 55%;
+}
+.page3-part1 h1{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.page3-part1 p{
+    font-size: 1rem;
+    margin: 20px 0;
+    color: #1d1d1d; 
+}
+.page3-part2{
+    width: 55vmin;
+    aspect-ratio: 1/.7;
+}
+
+/*=================================== page4 ============================= */
+.page4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+}
+.page4-part1{
+    align-self: self-start;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 5vw;   
+}
+.page4-part1 h4{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    background-color: #baff66;
+    display: inline;
+    padding: 1px 4px;
+    text-wrap: nowrap;
+}
+.page4-part1 p{
+    font-size: 1rem;
+    width: 50%;
+}
+.page4-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 4vw;
+    background-color: #1d1d1d;
+    width: 100%;
+    padding: 2vw;
+    border-radius: 10px;
+    margin-top: 20px;
+    
+
+}
+.page4-part2-item{
+    width: 55vmin;
+    height: 30vmin;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+.page4-part2-item P{
+    color: rgb(218, 218, 218);
+    font-size: 1.1rem;
+}
+.line{
+    width: 2px;
+    height: 100%;
+    background-color: #bababa;
+}
+#page4-learn-more{
+    color: #baff66;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+/* ================ responsive desing ================== */
+@media  (max-width: 1140px) {
+    .p2-part2-box{
+        width: 70vmin;
+    }
+    .p2-part2-box img {
+        width: 31vmin;
+    }
+  }
+@media (max-width: 1100px) {
+    .p1-center-part1 h1 {
+        font-size: 2.7rem;
+    }
+  }
+  
+  
+  
+
+
+
+@media (max-width: 980px) {
+    .p2-part2-box{
+        width: 100%;
+    }
+    .p1-center-con{
+        margin: 72px auto 0 auto;
+    }
+    .p1-center-part1 {
+        width: 59%;
+    }
+    .p1-center-part1 h1 {
+        width: 90%;
+        font-size: 1.7rem;
+    }
+    .p1-center-part1 p {
+        font-size: .9rem;
+        padding: 4px 0;
+    }
+    .center-part2 img {
+        width: 74%;
+    }
+    .p2-part2-box img {
+        width: 38vmin;
+    }
+    
+  }
+@media (max-width: 800px) {
+    .page3-con {
+        width: 100%;
+        flex-direction: column-reverse;
+        gap: 5vw;
+
+        padding: 20px;
+    }
+    .page3-part1 {
+        width: 100%;
+    }
+    .page3-part2 {
+        width: 45vmin;
+    }
+    .page4-part2 {
+        flex-direction: column-reverse;
+        gap: 3vh;
+    }
+    .page4-part2-item {
+        width: 69vmin;
+        height: 30vmin;
+        gap: 2vw;
+    }
+    .line {
+        height: 2px;
+        width: 100%;
+        background-color: #bababa;
+    }
+  }
+@media (max-width: 710px) {
+    .nav-item {
+        display: none;
+    }
+    .p1-center-con {
+         align-items: self-start;
+        flex-direction: column-reverse;
+
+    }
+    .p1-center-part1 {
+        width: 89%;
+    }
+    .p1-bottom-con {
+        margin: 60px auto 60px 0;
+    }
+    .p1-center-con {
+        margin: 13px auto 0 auto;
+    }
+    .p2-part1 {
+        margin: 0px 0 40px 0;
+    }
+    .p2-part2 {
+        gap: 4vw;
+    }
+    .page4-part2-item P {
+        font-size: .8rem;
+    }
+    #page4-learn-more {
+        font-size: 1rem;
+    }
+    .page4-part1 p {
+        font-size: 1rem;
+        width: 69%;
+    }
+    
+  }

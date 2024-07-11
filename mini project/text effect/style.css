@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    color: white;
+
+}
+.page1{background-color: rgb(133, 133, 221);}
+.page2{
+    background-color: rgb(53, 53, 194);
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vw;
+    padding: 6vw;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+.page3{background-color: rgb(22, 22, 170);}
+.page4{background-color: rgb(30, 30, 65);}
+p{
+    font-size: 1.4vw;
+    width: 100%;
+    /* overflow: hidden; */
+}
+h2{
+    width: 90%;
+    color: #ebebeb21;
+    font-size: 3.1vw;
+}
+
+span{
+    /* display: inline-block; */
+}

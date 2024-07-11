@@ -2,7 +2,7 @@ let allPage = document.querySelectorAll('.page');
 
 allPage.forEach(page =>{
     page.addEventListener('mousemove', function(e){
-        gsap.to(page.children, {
+        gsap.to(page.children[0], {
             opacity: 1,
             x:e.x,
             y:e.y, 
@@ -11,10 +11,14 @@ allPage.forEach(page =>{
         })
     })
     page.addEventListener('mouseleave', function(e){
-        gsap.to(page.children, {
+        gsap.to(page.children[0], {
             duration:.4,
             opacity: 0,
         })
         
     })
 })
+
+
+
+

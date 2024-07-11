@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: white;
+    font-size: 4rem;
+    overflow: hidden; /* bahire over flow ke hide kore dibe */
+}
+h1 span{
+    display: inline-block; /* jehe to inline / bishes kore span a transform prop kaj kore na tai */
+}
